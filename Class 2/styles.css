@@ -1,0 +1,190 @@
+/* * {
+    font-weight: bold !important;
+}
+
+p {
+    color: blue !important;
+}
+
+h1, h2, h3 {
+    text-decoration: underline;
+}
+
+#idSelector{
+    color: brown !important;
+}
+
+.class-selector{
+    font-style: italic;
+} */
+
+/*Child Selector **/
+/* div > p {
+    color: orange !important;
+} */
+
+/*Descendent Selector **/
+/* div p {
+    color: grey !important;
+} */
+
+/*Adjacent Sibling Selector**/
+/* h1 + p {
+    text-decoration: underline !important;
+} */
+
+/*General Sibling Selector**/
+/* h1~p {
+    text-decoration: underline;
+} */
+
+/* .parent{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.child{
+    width: inherit;
+    height: 50px;
+    background-color: blue;
+    min-width: 450px;
+max-width: 650px;
+} */
+
+/* @font-face {
+    font-family: 'ChunkFiveRegular';
+    src: url('fonts/chunkfive.eot');
+} */
+
+p { 
+    /* color: red; */
+    /* color: #ccc; */
+    /* color: rgb(70, 50, 90); */
+    /* color: rgba(70, 50, 90, 0.5); */
+    /* opacity: 0.6; */
+    /* background-color: red; */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* font-weight: bold; */
+    /* font-size: 25px; */
+    /* font-style: italic; */
+    /* text-transform: uppercase; */
+    /* text-transform: lowercase; */
+    /* text-transform: capitalize; */
+    /* text-decoration: underline; */
+    /* text-decoration:overline */
+    /* text-decoration: line-through; */
+    /* line-height: 5px; for spacing between lines*/ 
+    /* letter-spacing: 5px; */
+    /* word-spacing: 10px; */
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    /* text-indent: 20px; */
+    /* text-shadow: 2px 2px 2px red; */
+}
+
+/* p::first-letter{
+    font-size: 25px;
+}
+
+.paragraph::first-line{
+    text-decoration: underline;
+} */
+
+/* .parent :hover{
+    background-color: grey;
+}
+
+.parent:focus{
+    border-radius: 20px;
+} */
+
+/* * {
+    margin: 0 auto;
+} */
+
+.boxer{
+    width: 200px;
+    max-height: 80px;
+    background-color: yellow;
+    /* overflow: hidden; */
+    overflow: scroll;
+    overflow-x: hidden;
+    /* margin-top: 100px;
+    margin-left: 10px; */
+    /* margin: 200px 0px 0px 100px; */
+    /* padding: 10px 10px 10px 10px; */
+    /* margin: 10px 10px; */
+    /* padding: 10px 10px; */
+    /* border: 2px solid red; */
+    /* box-shadow: 20px 20px 2px 2px grey; */
+}
+
+.one { 
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 100px;
+    /* visibility: hidden; */
+    /* display: none; */
+    /* -moz-border-image: url("./1.png")
+ 11 11 11 11 stretch;
+-webkit-border-image: url("./1.png")
+ 11 11 11 11 stretch;
+border-image: url("./1.png")
+ 11 11 11 11 stretch; */
+}
+
+.two { 
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.list {
+    list-style-type: square;
+    list-style-position: inside;
+    /* list-style-image: url("./1.png"); */
+}
+
+li { 
+    margin: 10px 0px 0px 0px;}
+
+.global {
+    border: 1px solid red;
+    /* border-spacing : 10px */
+    border-collapse: separate;
+}
+
+/* table .tw {
+    empty-cells: hide;
+}
+
+.dummy { 
+    empty-cells: hide;
+} */
+
+.regular-p {
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    position: absolute;
+    z-index: 1;
+}
+.regular{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    /* position: absolute; */
+    /* position: fixed  ; */
+}
+
+body { 
+    /* background-image: url("./1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    /* background: #ffffff url("images/tulip.gif")
+ no-repeat top right; */
+}
