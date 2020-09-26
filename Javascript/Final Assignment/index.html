@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>HBL ATM</title>
+  </head>
+  <body>
+    <input type="number" placeholder="enter your pin" id="pin" />
+    <button onclick="checkPin()">Enter</button>
+
+    <div id="root" style="display: none">
+      <button onclick="withDraw(500)">500</button>
+      <button onclick="withDraw(1000)">1000</button>
+      <button onclick="withDraw(1500)">1500</button>
+      <button onclick="withDraw(2000)">2000</button>
+      <button onclick="showPanel()">Other amount</button>
+    </div>
+
+    <div id="inputs" style="display: none">
+      <input type="number" id="txtRs" placeholder="enter your amount" />
+      <button onclick="customDraw()">Checkout</button>
+    </div>
+  </body>
+  <script src="js/app.js"></script>
+</html>
