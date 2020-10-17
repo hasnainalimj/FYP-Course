@@ -3,15 +3,24 @@
 // console.log('global this' , this)
 
 function calling() {
-    console.log('inside simple function', this)
+   console.log(this)
 }
 
 // calling()
+function ali() {
 
-recieving = () => {
-    console.log('inside arrow function', this)
 }
 
+// ali()
+// calling()
+
+recieving = () => {
+    let b = 'b'
+    callback = () => {
+        console.log(this)
+    }
+    callback()
+}
 // recieving()
 
 const obj = {
@@ -24,7 +33,7 @@ const obj = {
 }
 
 // obj.simple() //Depends on the scope and return you parent this
-// obj.arrow() //Always returns you grand parent this
+obj.arrow() //Always returns you grand parent this
 
 function sum(n1, n2) {
     console.log(n1 + n2)
@@ -40,10 +49,10 @@ subtract = (n1, n2) => {
 
 //CALLBACK FUNCTIONS
 
-// function makeCall(cb) {
-//     if (typeof cb !== 'function') return
-//     cb()
-// }
+function makeCall(cb) {
+    if (typeof cb !== 'function') return
+    cb()
+}
 
 // fetch().then(() => {})
 
@@ -66,7 +75,7 @@ subtract = (n1, n2) => {
 // console.log(1)
 // setTimeout(() => {
 //     console.log(2)
-// }, 1000)
+// }, 5000)
 // console.log(3)
 
 // console.log(1)
@@ -82,15 +91,16 @@ subtract = (n1, n2) => {
 // }).then(() => {
 //     console.log(3)
 // })
+// console.log('aaaa')
 
-const output = new Promise((resolve, reject) => {
-    var age = 20
-    if (age === 20) {
-        resolve('He can join us')
-    } else {
-        reject('Not allowed')
-    }
-})
+// const output = new Promise((resolve, reject) => {
+//     var age = 21
+//     if (age === 20) {
+//         resolve('He can join us')
+//     } else {
+//         reject('Not allowed')
+//     }
+// })
 
 // console.log("output", output)
 
@@ -109,7 +119,7 @@ const output = new Promise((resolve, reject) => {
 // })
 
 // const promiseThree = new Promise((resolve, reject) => {
-//     resolve('Promise three resolved')
+//     reject('Promise three resolved')
 // })
 
 // const allResults = Promise.all([promiseOne, promiseTwo, promiseThree])
@@ -133,7 +143,7 @@ const output = new Promise((resolve, reject) => {
 // const promiseTwo = new Promise((resolve, reject) => {
 //     setTimeout(() => {
 //         resolve('two execute')
-//     }, 1000)
+//     }, 300)
 // })
 
 // const promiseThree = new Promise((resolve, reject) => {
